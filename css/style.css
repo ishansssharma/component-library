@@ -1,0 +1,27 @@
+.sidebar {}
+
+.overview-button {
+
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	background-color: lightcoral;
+	font-style: inherit;
+	border-radius: 1rem;
+	height: 2rem;
+	width: 10rem;
+
+}
+
+.overview-button:hover,
+.overview-button--active {
+	background-color: var(--color-primary);
+}
+
+.component {
+	display: none;
+}
+
+.component--visible {
+	display: flex;
+}

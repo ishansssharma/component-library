@@ -5,9 +5,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Komponent Bibliotek</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+	<aside class="sidebar">
+		<ul class="overview">
+			<button data-set="accordion" class="overview-button overview-button--active">Accordion</button>
+			<br>
+			<button data-set="toast" class="overview-button">Toast</button>
+			<br>
+			<button data-set="button" class="overview-button">Button</button>
+			<br>
+			<button data-set="switch" class="overview-button">Switch</button>
+			<br>
+			<button data-set="checkbox" class="overview-button">Checkbox</button>
+		</ul>
+	</aside>
+
+	<main>
+		<div class="component component--visible" data-name="accordion">
+			<div class="component-state">
+				<div class="component-state__name">Normal</div>
+
+				<div class="component-state__variant">Accordion normal</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">Hover</div>
+
+				<div class="component-state__variant">Accordion hover</div>
+			</div>
+		</div>
+
+
+
+	</main>
+
 
 </body>
 
