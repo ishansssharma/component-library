@@ -1,0 +1,23 @@
+.radio {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+
+
+
+}
+
+.radio-type {
+	border: 0.2rem solid black;
+	height: 3rem;
+	width: 7rem;
+	border-radius: 1rem;
+	text-align: center;
+	background-color: lightcoral;
+
+}
+
+.radio-checkmark {
+	height: 1.5rem;
+	width: 1.5rem;
+}

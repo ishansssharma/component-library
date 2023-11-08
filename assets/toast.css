@@ -1,0 +1,53 @@
+.toast__normal {
+	display: none;
+
+}
+
+.toast__normal--visible {
+	width: 20rem;
+	height: 2.5rem;
+	background: #98D469;
+	text-align: center;
+	border-radius: 0.625rem;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+
+}
+
+.toast__advarsel {
+	display: none;
+}
+
+.toast__advarsel--visible {
+	width: 20rem;
+	height: 2.5rem;
+	background: #F9B023;
+	text-align: center;
+	border-radius: 0.625rem;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+
+}
+
+.toast__error {
+	width: 20rem;
+	height: 2.5rem;
+	background: #F80000;
+	text-align: center;
+	border-radius: 0.625rem;
+	display: none;
+}
+
+.toast__error--visible {
+	width: 20rem;
+	height: 2.5rem;
+	background: #F80000;
+	text-align: center;
+	border-radius: 0.625rem;
+	display: flex;
+	justify-content: center;
+}

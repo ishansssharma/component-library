@@ -1,0 +1,29 @@
+.choicechip-title {
+	background-color: lightcoral;
+	margin-top: 2rem;
+	text-align: center;
+	border-radius: 2rem;
+}
+
+
+.choicechip-container {
+	display: flex;
+	width: 20%;
+	gap: 2rem;
+
+
+}
+
+.choicechip-animal {
+
+	height: 2.5rem;
+	border-radius: 1rem;
+	text-align: center;
+
+
+
+}
+
+.choicechip-animal--click {
+	background-color: lightcoral;
+}

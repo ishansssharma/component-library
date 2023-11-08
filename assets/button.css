@@ -1,0 +1,37 @@
+.click__me {
+	font-size: x-large;
+	background: wheat;
+	height: 2rem;
+	width: 7rem;
+	border: 0.1rem solid black;
+	border-radius: 1rem;
+
+}
+
+.click__me--hover:hover {
+	background: turquoise;
+}
+
+.click__me--active:active,
+.click__me--active:hover {
+	transform: translate(1%, 1%);
+	background: turquoise;
+	position: relative;
+}
+
+.clicked__button {
+	display: none;
+
+}
+
+.clicked__button--visible {
+	display: block;
+	border: 0.1rem solid black;
+	border-radius: 1rem;
+	text-align: center;
+	background: turquoise;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+}

@@ -1,27 +1,41 @@
-.sidebar {}
+body {
+	display: flex;
+	gap: 4rem;
+}
 
-.overview-button {
+.overview {}
+
+.overview__button {
 
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 2rem;
-	background-color: lightcoral;
-	font-style: inherit;
+	background-color: lightgrey;
 	border-radius: 1rem;
-	height: 2rem;
-	width: 10rem;
+	height: 3rem;
+	width: 15rem;
+	align-items: center;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+
+
 
 }
 
-.overview-button:hover,
-.overview-button--active {
+.overview__button:hover {
 	background-color: var(--color-primary);
 }
 
+
+
 .component {
 	display: none;
+	flex-flow: column;
+	gap: var(--spacing-medium);
+
 }
 
 .component--visible {
 	display: flex;
+
 }

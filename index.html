@@ -10,43 +10,265 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="assets/accordion.css">
+	<link rel="stylesheet" href="assets/button.css">
+	<link rel="stylesheet" href="assets/toast.css">
+	<link rel="stylesheet" href="assets/checkbox.css">
+	<link rel="stylesheet" href="assets/badge.css">
+	<link rel="stylesheet" href="assets/inputfield.css">
+	<link rel="stylesheet" href="assets/radiobutton.css">
+	<link rel="stylesheet" href="assets/choicechip.css">
 </head>
 
 <body>
 	<aside class="sidebar">
 		<ul class="overview">
-			<button data-set="accordion" class="overview-button overview-button--active">Accordion</button>
-			<br>
-			<button data-set="toast" class="overview-button">Toast</button>
-			<br>
-			<button data-set="button" class="overview-button">Button</button>
-			<br>
-			<button data-set="switch" class="overview-button">Switch</button>
-			<br>
-			<button data-set="checkbox" class="overview-button">Checkbox</button>
+			<li>
+				<button data-component="accordion" class="overview__button overview__button--active">Accordion</button>
+			</li>
+
+
+			<li>
+				<button data-component="toast" class="overview__button overview__button--active">Toast</button>
+			</li>
+
+
+			<li>
+				<button data-component="button" class="overview__button overview__button--active">Button</button>
+			</li>
+
+
+			<li>
+				<button data-component="switch" class="overview__button overview__button--active">Switch</button>
+			</li>
+
+
+			<li>
+				<button data-component="checkbox" class="overview__button overview__button--active">Checkbox</button>
+			</li>
+
+
+			<li>
+				<button data-component="badge" class="overview__button overview__button--active">Badge</button>
+			</li>
+
+
+			<li>
+				<button data-component="inputfield"
+					class="overview__button overview__button--active">Inputfield</button>
+			</li>
+
+
+			<li>
+				<button data-component="radiobutton"
+					class="overview__button overview__button--active">RadioButton</button>
+			</li>
+
+
+			<li>
+				<button data-component="choicechips"
+					class="overview__button overview__button--active">Choicechips</button>
+			</li>
 		</ul>
 	</aside>
 
 	<main>
-		<div class="component component--visible" data-name="accordion">
+		<div class="component" data-name="accordion">
+			<div class="accordion">
+				<div class="component-state">
+					<div class="component-state__name ">Normal</div>
+
+					<div class="component-state__variant accordion__normal">Accordion title</div>
+				</div>
+
+				<div class="component-state">
+					<div class="component-state__name">Hover</div>
+
+					<div class="component-state__variant accordion__hover">Accordion hover</div>
+				</div>
+
+				<div class="component-state">
+					<div class="component-state__name">Expanded</div>
+					<div class="accordion__expanded">Accordion Expanded</div>
+
+					<div
+						class="component-state__variant accordion__expanded accordion__expanded--info accordion__expanded--info--visible">
+						Hei og velkommen
+						til Accordion!
+						Accordion er en boks som utvider seg når du trykker på den.
+						Da vet du det!</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="toast">
+			<div class="component-state">
+				<button class="component-state__name toast-button__green">Normal (click me)</button>
+
+				<div class="component-state__variant toast__normal">Toast vises</div>
+			</div>
+
+			<div class="component-state">
+				<button class="component-state__name toast-button__orange">Warning (click me)</button>
+
+				<div class="component-state__variant toast__advarsel">Advarsel</div>
+			</div>
+
+			<div class="component-state">
+				<button class="component-state__name toast-button__red">Error (click me)</button>
+
+				<div class="component-state__variant toast__error">Feilmelding</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="button">
 			<div class="component-state">
 				<div class="component-state__name">Normal</div>
 
-				<div class="component-state__variant">Accordion normal</div>
+				<div class="component-state__variant">
+					<button class="click__me">Click me</button>
+				</div>
 			</div>
 
 			<div class="component-state">
 				<div class="component-state__name">Hover</div>
 
-				<div class="component-state__variant">Accordion hover</div>
+				<div class="component-state__variant">
+					<button class="click__me click__me--hover">Click me</button>
+				</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">Active</div>
+
+				<div class="component-state__variant">
+					<button class="click__me click__me--active">Click me</button>
+
+					<div class="clicked__button">Button is clicked</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="switch">
+			<div class="component-state">
+				<div class="component-state__name">Normal</div>
+
+				<div class="component-state__variant">Toast vises</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">Warning</div>
+
+				<div class="component-state__variant">Advarsel</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">Error</div>
+
+				<div class="component-state__variant">Feilmelding</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="checkbox">
+			<div class="component-state">
+				<input type="checkbox" class="component-state__name checkbox__one">Jeg godtar alle vilkår.
+			</div>
+
+			<div class="component-state">
+				<input type="checkbox" class="component-state__name checkbox__one">
+				Jeg er over 18år.
+			</div>
+		</div>
+
+		<div class="component" data-name="badge">
+			<div class="component-state container-badge">
+				<div class="component-state__name">Badge</div>
+				<div class="component-state__variant badge">Badge</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="inputfield">
+			<div class="component-state">
+				<div class="component-state__name">Navn</div>
+				<div class="component-state__variant">
+					<input class="inputfield" type="text">
+				</div>
+			</div>
+			<div class="component-state">
+				<div class="component-state__name">Alder</div>
+				<div class="component-state__variant">
+					<input class="inputfield" type="text">
+				</div>
+			</div>
+			<div class="component-state">
+				<div class="component-state__name">Kjønn</div>
+				<div class="component-state__variant">
+					<input class="inputfield" type="text">
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="radiobutton">
+			<div class="component-state__variant radio">
+				<input class="radio-checkmark" type="radio">
+				<div class="component-state__name radio-type">Buss</div>
+			</div>
+
+			<div class="component-state__variant radio">
+				<input class="radio-checkmark" type="radio">
+				<div class="component-state__name radio-type">Tog</div>
+			</div>
+
+
+			<div class="component-state__variant radio">
+				<input class="radio-checkmark" type="radio">
+				<div class="component-state__name radio-type">T-bane</div>
+			</div>
+
+			<div class="component-state__variant radio">
+				<input class="radio-checkmark" type="radio">
+				<div class="component-state__name radio-type">Trikk</div>
+			</div>
+
+
+		</div>
+
+		<div class="component" data-name="choicechips">
+			<div class="component-state choicechip-title">Choose your animal/animals</div>
+			<div class="choicechip-container">
+				<div class="choicechip-animal">Katt</div>
+				<div class="choicechip-animal">Hund</div>
+				<div class="choicechip-animal">Ku</div>
+				<div class="choicechip-animal">Hest</div>
+				<div class="choicechip-animal">Fugl</div>
+				<div class="choicechip-animal">Ape</div>
+				<div class="choicechip-animal">Annet</div>
 			</div>
 		</div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</main>
 
-
+	<script src="index.js"></script>
 </body>
 
 </html>

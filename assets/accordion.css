@@ -1,0 +1,43 @@
+.accordion__normal {
+	width: 20rem;
+	height: 2.5rem;
+	background-color: #D9D9D9;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.accordion__hover {
+	width: 20rem;
+	height: 2.5rem;
+	background-color: #D9D9D9;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.accordion__hover:hover {
+	width: 20rem;
+	height: 2.5rem;
+	background-color: #FDAFAF;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.accordion__expanded {
+	background-color: #FDAFAF;
+	border-radius: 1rem;
+	text-align: center;
+	width: 20rem;
+	height: 2.5rem;
+
+}
+
+.accordion__expanded--info {
+	display: block;
+	width: 20rem;
+	height: 15rem;
+}
+
+.accordion__expanded--info--visible {
+	display: none;
+
+}

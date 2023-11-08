@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Kanit', sans-serif;
+
+
+}
+
+body {
+	font-size: 30px;
+
+}
+
+button {
+	background: transparent;
+	cursor: pointer;
+	border: transparent;
+}
+
+li {
+	list-style: none;
+}
